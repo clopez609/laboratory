@@ -28,7 +28,7 @@
             if ($result == true){
                 return $result->fetchAll(PDO::FETCH_ASSOC);
             } else {
-                echo "error: ". $sql;
+                return "error en consulta: ". $sql;
             }
         }
 
@@ -41,7 +41,7 @@
             if ($result == true){
                 return $result->fetchAll(PDO::FETCH_ASSOC);
             } else {
-                echo "error: ". $sql;
+                return "error en consulta: ". $sql;
             }
         }
     }

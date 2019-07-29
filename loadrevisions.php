@@ -15,15 +15,15 @@
 
                     $result = $gateway->loadRevisions($value);
             
-                    echo json_encode($result);
+                    echo json_encode(array('success' => 1, $result));
                 }
                 else{
-                    echo json_encode(array('error' => 'error en la peticion, verifique.'));
+                    echo json_encode(array('success' => 0));
                 }
             }
         }
     }
     else {
-        echo "error en la peticion";
+        echo "Error: La petición GET llego vacía.";
     }
 ?>

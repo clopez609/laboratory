@@ -15,14 +15,11 @@
         <h6 class="text-center mt-4">
             Ejecicio 2 - Final Laboratorio
         </h6>
-        <p class="validacion">
-            
-        </p>
         <form id="form-groups" method="POST">
             <div class="form-group">
                 <label for="slt-grupos">Grupos</label>
                 <select name="id" class="form-control" id="slt-grupos">
-                    <option selected value=0 >Seleccione un Grupo...</option>
+                    <option selected value = 0 >Seleccione un Grupo...</option>
                     <?php
                         require_once "dbLaboratory.php";
 
